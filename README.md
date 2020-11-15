@@ -1,4 +1,4 @@
-# github.com/pm-esd/redis
+# github.com/pm-redemption/redis
 
 ## 简介
 
@@ -11,7 +11,7 @@ abulo/go-esd/cache/redisclient 是在redis官方包上进行的二次封装。�
 #### 1. 对于Go开发人员，你需要安装package
 
 ```shell
-go get github.com/pm-esd/redis
+go get github.com/pm-redemption/redis
 ```
 
 #### 2. 创建redis-client
@@ -22,7 +22,7 @@ go get github.com/pm-esd/redis
 
 ```go
 //此方法主要应用与测试环境,生产环境不建议使用
-import "redis" github.com/pm-esd/redis
+import "redis" github.com/pm-redemption/redis
 
 func main() {
   // check options.go for more details
@@ -56,7 +56,7 @@ func main() {
 * 从环境变量中获取参数来创建redisclient
 
 ```go
-import redis "github.com/pm-esd/redis"
+import redis "github.com/pm-redemption/redis"
 func main(){
     //RWType:
     //    OnlyWrite
@@ -73,7 +73,7 @@ func main(){
 * 从配置文件中获取参数来创建redisclient
 
 ```go
-import redis "github.com/pm-esd/redis"
+import redis "github.com/pm-redemption/redis"
 func main(){
     //RWType:
     //    OnlyWrite
@@ -91,7 +91,7 @@ func main(){
 优先级:环境变量>配置文件
 
 ```go
-import redis "github.com/pm-esd/redis"
+import redis "github.com/pm-redemption/redis"
 func main(){
     //RWType:
     //    OnlyWrite
