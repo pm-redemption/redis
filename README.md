@@ -1,8 +1,8 @@
-# github.com/pm-redemption/redis
+# github.com/pm-esd/redis
 
 ## 简介
 
-redisclient 是在redis官方包上进行的二次封装。它适用于容器环境,能自动的从容器的环境变量、挂载的配置文件获取参数并创建redis-client实例。方便开发人员
+abulo/go-esd/cache/redisclient 是在redis官方包上进行的二次封装。它适用于容器环境,能自动的从容器的环境变量、挂载的配置文件获取参数并创建redis-client实例。方便开发人员
 
 ## 使用
 
@@ -11,7 +11,7 @@ redisclient 是在redis官方包上进行的二次封装。它适用于容器环
 #### 1. 对于Go开发人员，你需要安装package
 
 ```shell
-go get github.com/pm-redemption/redis
+go get github.com/pm-esd/redis
 ```
 
 #### 2. 创建redis-client
@@ -22,7 +22,7 @@ go get github.com/pm-redemption/redis
 
 ```go
 //此方法主要应用与测试环境,生产环境不建议使用
-import "redis" github.com/pm-redemption/redis
+import "redis" github.com/pm-esd/redis
 
 func main() {
   // check options.go for more details
@@ -56,7 +56,7 @@ func main() {
 * 从环境变量中获取参数来创建redisclient
 
 ```go
-import redis "github.com/pm-redemption/redis"
+import redis "github.com/pm-esd/redis"
 func main(){
     //RWType:
     //    OnlyWrite
@@ -73,7 +73,7 @@ func main(){
 * 从配置文件中获取参数来创建redisclient
 
 ```go
-import redis "github.com/pm-redemption/redis"
+import redis "github.com/pm-esd/redis"
 func main(){
     //RWType:
     //    OnlyWrite
@@ -91,7 +91,7 @@ func main(){
 优先级:环境变量>配置文件
 
 ```go
-import redis "github.com/pm-redemption/redis"
+import redis "github.com/pm-esd/redis"
 func main(){
     //RWType:
     //    OnlyWrite
